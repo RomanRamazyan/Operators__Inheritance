@@ -1,5 +1,9 @@
 #include <iostream>
 
+
+// Կառուցիչները բացակայում են
+// Կարելի էր ավելի լավ ձևով աբստրակտացնել կլասսերն այնպես, որ circle֊ը նույնպես ժառանգվեր Object֊ից
+
 class Object
 {
 		protected:
@@ -49,6 +53,7 @@ class Rectangle :public Object
 			}
 	};
 
+// Rectangle-ն ու Square֊ը շատ նման կլասսեր են կարող էին իրարից ժառանգվե
 class Square :public Object
 {
 		protected:
