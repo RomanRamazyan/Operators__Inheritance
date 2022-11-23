@@ -3,6 +3,7 @@
 class Complex 
 {
 	protected:
+		// Դասի անդամ փոփոխականների անունները ցանկալի է սկսել m_ ով, որպեսզի հետո դրանք տարբերվեն մյուս ժամանակավոր փոփոխականներից
 		int real, img;
 };
 
@@ -18,10 +19,17 @@ class Adder :public Complex
 			r.img = img + myObj.img;
 			return r;
 		}
+		
+		// Adder& operator = ( Equal const &myObj );
+		// Adder& operator += ( AdderEqual const &myObj )
+		// Adder& operator ++();
+		// և այլն
+		
 		void print()
 		{ std::cout << "Adder is: " << real << " + i" << img << '\n'; }
 };
 
+// Պետք էր մեկ դասում բոլոր օպերատորները գերբեռնել
 class Equal :public Complex
 {
 	public:
